@@ -1,0 +1,90 @@
+twitter_api_key:
+    # Twitter API Key を取得してそれぞれ記述してください
+    consumer_key        : xxxxx
+    consumer_secret     : xxxxx
+    access_token        : xxxxx-MddgpF13GBHnUbxesfn5G8gGV6dDRT
+    access_token_secret : xxxxx
+
+filter:
+    # フィルタリング処理の内容
+    # フィルリング処理は上の項目から順番に行われる
+    # 句点とは「。」「！」「？」「!?」の四種類を指す
+    # 読点は「、」となり三点は「...」となる。
+    need:
+        # on にすると各品詞を含まない対話文を除外する
+        # on か off を記述する
+        noun_main       : on    # 一般/固有名詞/サ変接続/形容動詞語幹
+        pronoun         : off   # 代名詞
+        noun_sub        : off   # その他の名詞
+        verb_main       : off   # 自立動詞
+        verb_sub        : off   # 非自立動詞
+        adjective_main  : off   # 自立形容詞
+        adjective_sub   : off   # 非自立形容詞
+        adverb          : off   # 副詞
+        particle        : off   # 助詞
+        auxiliary_verb  : off   # 助動詞
+        conjunction     : off   # 接続詞
+        prefix          : off   # 接頭詞
+        filler          : off   # フィラー
+        impression_verb : off   # 感動詞
+        pre_noun        : off   # 連体詞
+        three_dots      : off   # 三点
+        phrase_point    : off   # 句点
+        reading_point   : off   # 読点
+        others          : off   # その他
+    needless:
+        # on にすると各品詞を含む対話文を除外する
+        # on か off を記述する
+        noun_main       : off   # 一般/固有名詞/サ変接続/形容動詞語幹
+        pronoun         : off   # 代名詞
+        noun_sub        : off   # その他の名詞
+        verb_main       : off   # 自立動詞
+        verb_sub        : off   # 非自立動詞
+        adjective_main  : off   # 自立形容詞
+        adjective_sub   : off   # 非自立形容詞
+        adverb          : off   # 副詞
+        particle        : off   # 助詞
+        auxiliary_verb  : off   # 助動詞
+        conjunction     : off   # 接続詞
+        prefix          : off   # 接頭詞
+        filler          : off   # フィラー
+        impression_verb : off   # 感動詞
+        pre_noun        : off   # 連体詞
+        three_dots      : off   # 三点
+        phrase_point    : off   # 句点
+        reading_point   : off   # 読点
+        others          : on    # その他
+    dump:
+        # on にすると各品詞を対話文に含む
+        # off にした品詞は対話文から除外される
+        # on か off を記述する
+        noun_main       : on    # 一般/固有名詞/サ変接続/形容動詞語幹
+        pronoun         : on    # 代名詞
+        noun_sub        : on    # その他の名詞
+        verb_main       : on    # 自立動詞
+        verb_sub        : on    # 非自立動詞
+        adjective_main  : on    # 自立形容詞
+        adjective_sub   : on    # 非自立形容詞
+        adverb          : on    # 副詞
+        particle        : on    # 助詞
+        auxiliary_verb  : on    # 助動詞
+        conjunction     : on    # 接続詞
+        prefix          : on    # 接頭詞
+        filler          : on    # フィラー
+        impression_verb : on    # 感動詞
+        pre_noun        : on    # 連体詞
+        three_dots      : on    # 三点
+        phrase_point    : on    # 句点
+        reading_point   : on    # 読点
+        others          : off   # その他
+    length:
+        # 長さに関するフィルタ
+        min         : 6   # 最小単語数
+        max         : 20  # 最大単語数
+
+output:
+    # 対話データを各ファイルに出力するか
+    # on か off を記述する
+    part:
+        # ツイートデータ tweet.txt に対応する品詞データ (tweet-part.txt)
+        on
