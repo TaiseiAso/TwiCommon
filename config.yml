@@ -2,7 +2,7 @@ twitter_api_key:
     # Twitter API Key を取得してそれぞれ記述してください
     consumer_key        : xxxxx
     consumer_secret     : xxxxx
-    access_token        : xxxxx-MddgpF13GBHnUbxesfn5G8gGV6dDRT
+    access_token        : xxxxx
     access_token_secret : xxxxx
 
 filter:
